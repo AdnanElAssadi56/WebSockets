@@ -6,12 +6,20 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch src/index.js",
-    "start": "node start src/index.js"
+    "start": "node start src/index.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.2.1"
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.45.1",
+    "express": "^5.2.1",
+    "pg": "^8.18.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.4"
   }
 }
